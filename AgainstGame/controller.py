@@ -3,7 +3,7 @@ import player,monster
 hero = player.Player('小明')
 m = monster.Manster()
 combatdial = {'1':'战斗','2':'技能','3':'逃跑'}
-
+result = None
 
 class Controller:
 
@@ -17,21 +17,28 @@ class Controller:
             if i in combatdial:
                 
                 if i == '1':
-                    self.combat()
+                    result=hero.damages(m)
                 
                 elif i == '2':
-                    self.combat()
+                    result=hero.damages(m)
 
                 else :
                     break
-            
+                    
+                if result == True:
+                    #print('你赢了！')
+                    break
+                elif result == False:
+                    #print('你输了!')
+                    break
+
             else :
                 i=input('输入错误，请从新输入：')
 
 
 
 
-    def combat(self):
+    #def combat(self):
         
-        monster_attribute=hero.damages(m)
+        #monster_attribute=
             

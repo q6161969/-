@@ -18,10 +18,10 @@ class Player:
                 if self.hp <= 0:
                     print('你阵亡了！')
                     
-                    #return False
+                    return False
                 else :
                     print('你胜利了!')
-                    #return False
+                    return True
         
         #return True
     
