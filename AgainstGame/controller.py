@@ -20,7 +20,7 @@ class Controller:
                     result=hero.damages(m)
                 
                 elif i == '2':
-                    result=hero.damages(m)
+                    result=hero.magic(m)
 
                 else :
                     break
